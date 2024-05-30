@@ -47,7 +47,7 @@ const wtoken=async(code)=>{
     client_secret:process.env.CLIENT_SECRET_MY,
     code,
     grant_type:'authorization_code',
-    redirect_uri:'http://localhost:1337/api/auth/google/callback'
+    redirect_uri:https://server-deploy-6984.onrender.com/api/auth/google/callback'
 
 
   })
@@ -77,7 +77,7 @@ data=values;
     const body=queryString.stringify({
       client_id:'961301679147-0l47s1b36g84p25nfb8q6u5680f93mh1.apps.googleusercontent.com',
       response_type:'code',
-      redirect_uri:'http://localhost:1337/api/auth/google/callback',
+      redirect_uri:'https://server-deploy-6984.onrender.com/api/auth/google/callback',
       scope:'email profile',
       state:state,
      
