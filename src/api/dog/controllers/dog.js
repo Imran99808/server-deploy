@@ -47,7 +47,7 @@ const wtoken=async(code)=>{
     client_secret:process.env.CLIENT_SECRET_MY,
     code,
     grant_type:'authorization_code',
-    redirect_uri:https://server-deploy-6984.onrender.com/api/auth/google/callback'
+    redirect_uri:'https://server-deploy-6984.onrender.com/api/auth/google/callback'
 
 
   })
