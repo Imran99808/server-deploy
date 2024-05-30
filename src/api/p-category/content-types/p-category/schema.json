@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "p_categories",
+  "info": {
+    "singularName": "p-category",
+    "pluralName": "p-categories",
+    "displayName": "P-category",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::categorie.categorie",
+      "mappedBy": "p_category"
+    }
+  }
+}

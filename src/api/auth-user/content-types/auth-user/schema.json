@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "auth_users",
+  "info": {
+    "singularName": "auth-user",
+    "pluralName": "auth-users",
+    "displayName": "Auth-User",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sub": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "image": {
+      "type": "string"
+    }
+  }
+}

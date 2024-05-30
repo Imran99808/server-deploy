@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "add_cards",
+  "info": {
+    "singularName": "add-card",
+    "pluralName": "add-cards",
+    "displayName": "Add-card",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email": {
+      "type": "email"
+    },
+    "product_id": {
+      "type": "integer"
+    },
+    "color_index": {
+      "type": "integer"
+    },
+    "qty": {
+      "type": "integer"
+    }
+  }
+}

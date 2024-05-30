@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "trending_products",
+  "info": {
+    "singularName": "trending-product",
+    "pluralName": "trending-products",
+    "displayName": "Trending Product",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product",
+      "mappedBy": "trending_product"
+    }
+  }
+}

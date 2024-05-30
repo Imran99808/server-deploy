@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "customer_adresses",
+  "info": {
+    "singularName": "customer-adress",
+    "pluralName": "customer-adresses",
+    "displayName": "Customer-Address",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "integer"
+    },
+    "email": {
+      "type": "email"
+    },
+    "address": {
+      "type": "string"
+    },
+    "locationName": {
+      "type": "string"
+    },
+    "division": {
+      "type": "string"
+    },
+    "district": {
+      "type": "string"
+    },
+    "subDistrict": {
+      "type": "string"
+    }
+  }
+}
