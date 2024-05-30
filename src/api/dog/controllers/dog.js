@@ -48,8 +48,7 @@ const wtoken=async(code)=>{
     code,
     grant_type:'authorization_code',
     redirect_uri:'https://server-deploy-6984.onrender.com/api/auth/google/callback'
-
-
+              
   })
 
   const tokenResponse=await fetch(tokenEndpoint,{
