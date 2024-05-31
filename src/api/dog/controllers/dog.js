@@ -135,10 +135,10 @@ ctx.body={
      
       ctx.cookies.set('jwt',token, {
         httpOnly: true,
-        // secure: true,
+         secure: true,
          maxAge: 1000 * 60 * 60 * 24 * 14, // 14 Day Age
-         domain:"localhost",
-        // sameSite: "none",
+         // domain:"localhost",
+         sameSite: "None",
         overwrite: true,
       });
   
