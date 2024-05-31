@@ -74,7 +74,7 @@ const{state,values}= ctx.request.body;
 data=values;
 
     const body=queryString.stringify({
-      client_id:'961301679147-0l47s1b36g84p25nfb8q6u5680f93mh1.apps.googleusercontent.com',
+      client_id:process.env.CLIENT_ID_MY,
       response_type:'code',
       redirect_uri:'https://server-deploy-6984.onrender.com/api/auth/google/callback',
       scope:'email profile',
@@ -135,7 +135,7 @@ ctx.body={
      
       ctx.cookies.set('jwt',token, {
         httpOnly: true,
-        // secure: true,
+         secure: true,
          maxAge: 1000 * 60 * 60 * 24 * 14, // 14 Day Age
          domain:"client-deploy-rho.vercel.app",
         // sameSite: "none",
