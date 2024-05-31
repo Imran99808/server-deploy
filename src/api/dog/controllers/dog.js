@@ -93,6 +93,7 @@ ctx.body={
   
     
     } catch (err) {
+      console.log(err)
       ctx.body = err;
     }
   },
