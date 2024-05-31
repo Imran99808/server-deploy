@@ -131,7 +131,7 @@ ctx.body={
         email:userData.email,
         image:userData.picture
       }
-      const token=jwt.sign(tokenInfo,'ondex');
+      const token=jwt.sign(tokenInfo,process.env.CLIENT_SECRET_JWT);
      
       ctx.cookies.set('jwt',token, {
         httpOnly: true,
