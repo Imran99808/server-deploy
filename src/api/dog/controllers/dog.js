@@ -137,7 +137,7 @@ ctx.body={
          httpOnly: true,
          secure: true,
          maxAge: 1000 * 60 * 60 * 24 * 14, // 14 Day Age
-         domain:'server-deploy-6984.onrender.com',
+         domain:'client-deploy-rho.vercel.app',
          
       });
   
