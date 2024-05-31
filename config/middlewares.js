@@ -29,6 +29,7 @@ module.exports = [
       origin: ['https://client-deploy-rho.vercel.app'],
       methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'HEAD', 'OPTIONS'],
       headers: ['Content-Type', 'Authorization', 'Origin', 'Accept'],
+      credentials: true,
       keepHeaderOnError: true,
     },
   },
