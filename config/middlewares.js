@@ -15,7 +15,7 @@ module.exports = [
       },
     },
   },
-  // 'strapi::cors',
+   'strapi::cors',
   'strapi::poweredBy',
   'strapi::query',
   'strapi::body',
@@ -24,15 +24,5 @@ module.exports = [
   'strapi::public',
 
 
-  { 
-    name: 'strapi::cors',
-    config: {
-      // enabled: true,
-      origin: ['https://client-deploy-rho.vercel.app'], // Add all origins from which requests will be made
-      methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'HEAD', 'OPTIONS'],
-      headers: ['Content-Type', 'Authorization', 'Origin', 'Accept'],
-      credentials: true,
-      keepHeaderOnError: true,
-    },
-  },
+  
 ];
