@@ -133,13 +133,13 @@ ctx.body={
       }
       const token=jwt.sign(tokenInfo,process.env.CLIENT_SECRET_JWT);
      
-      ctx.cookies.set('jwt',token, {
+      ctx.cookies.set('jwt','emon, {
         httpOnly: true,
          secure: true,
          maxAge: 1000 * 60 * 60 * 24 * 14, // 14 Day Age
-         // domain:"https://client-deploy-rho.vercel.app",
+          domain:"client-deploy-rho.vercel.app",
         //  sameSite: "none",
-        // overwrite: true,
+         overwrite: true,
       });
   
 
