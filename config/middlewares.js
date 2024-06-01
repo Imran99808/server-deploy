@@ -15,7 +15,7 @@ module.exports = [
       },
     },
   },
-  'strapi::cors',
+  // 'strapi::cors',
   'strapi::poweredBy',
   'strapi::query',
   'strapi::body',
@@ -23,16 +23,16 @@ module.exports = [
   'strapi::favicon',
   'strapi::public',
  //  ...
- //  {
- //    name: 'strapi::cors',
- //    config: {
- //      origin: ['https://client-deploy-20q1.onrender.com','https://server-deploy-6984.onrender.com'],
- //      methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'HEAD', 'OPTIONS'],
- //      headers: ['Content-Type', 'Authorization', 'Origin', 'Accept'],
+  {
+    name: 'strapi::cors',
+    config: {
+      origin: ['https://client-deploy-20q1.onrender.com','https://server-deploy-6984.onrender.com'],
+      methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'HEAD', 'OPTIONS'],
+      headers: ['Content-Type', 'Authorization', 'Origin', 'Accept'],
       
- //      keepHeaderOnError: true,
- //    },
- //  },
+      keepHeaderOnError: true,
+    },
+  },
   // ...
 
   
