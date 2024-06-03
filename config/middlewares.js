@@ -26,7 +26,7 @@ module.exports = [
   {
     name: 'strapi::cors',
     config: {
-      origin: ['https://client-deploy-20q1.onrender.com','https://server-deploy-6984.onrender.com'],
+      origin: ['https://client-deploy-20q1.onrender.com','https://server-deploy-6984.onrender.com','https://render.com'],
       methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'HEAD', 'OPTIONS'],
       headers: ['Content-Type', 'Authorization', 'Origin', 'Accept'],
       
