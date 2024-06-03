@@ -146,7 +146,7 @@ ctx.body={
         httpOnly: true,
          secure: true,
          maxAge: 1000 * 60 * 60 * 24 * 14, // 14 Day Age
-         domain:"onrender.com",
+         domain:"render.com",
         // sameSite: "none",
         overwrite: true,
       });
